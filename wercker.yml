@@ -11,6 +11,7 @@ box: debian
 
     # - mongo
     # http://devcenter.wercker.com/docs/services/mongodb.html
+    - mongo:3.2
 
 # This is the build pipeline. Pipelines are the core of wercker
 # Read more about pipelines on our dev center
@@ -24,3 +25,10 @@ build:
         name: echo
         code: |
           echo "hello world!"
+
+    - script:
+        name: environment-variables
+        code: |
+          export http_proxy=http://www-proxy.us.oracle.com:80
+          export https_proxy=http://www-proxy.us.oracle.com:80
+          printenv
