@@ -4,10 +4,10 @@
 # http://devcenter.wercker.com/docs/containers/index.html
 box: debian
 #box: 
-#  id: store/oracle/weblogic
+#  id: store/oracle/serverjre
 #  username: $DOCKER_USERNAME
 #  password: $DOCKER_PASSWORD
-#  tag: 12.2.1.3
+#  tag: 8
 
 # You can also use services such as databases. Read more on our dev center:
 # http://devcenter.wercker.com/docs/services/index.html
