@@ -32,7 +32,7 @@ build:
         name: echo
         code: |
           echo "hello world!"
-
+          echo "hello!"
     - script:
         name: environment-variables
         code: |
